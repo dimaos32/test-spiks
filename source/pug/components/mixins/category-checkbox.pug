@@ -1,0 +1,7 @@
+mixin category-checkbox({ icon, text, checked, value })
+
+  label.category-checkbox
+    input.visually-hidden(type="checkbox", name="categories", value=value, checked=checked)
+    .category-checkbox__label
+      +icon(...icon).category-checkbox__label-icon
+      span.category-checkbox__label-text= text

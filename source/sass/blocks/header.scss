@@ -1,13 +1,18 @@
 .header {
-  padding: 28px 0;
+  margin: 22px 0;
+}
 
-  background-color: $color-neon-blue;
+.header__form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
-  .container {
-    display: flex;
-  }
+.header__logo {
+  flex-shrink: 0;
+}
 
-  &__logo {
-    color: $color-default-white;
-  }
+.header__site-search {
+  max-width: 470px;
 }

@@ -1,0 +1,9 @@
+mixin logo()
+
+  if(currentUrl === "index.html")
+    //- lighthouse снимает 10 баллов SEO за <a> без href
+    span.logo&attributes(attributes)
+      img.logo__img(src="img/content/logo.svg", width="170", height="26", alt="Marketplace logo")
+  else
+    a.logo(href="index.html", aria-label="Переход на главную")&attributes(attributes)
+      img.logo__img(src="img/content/logo.svg", width="170", height="26", alt="Marketplace logo")

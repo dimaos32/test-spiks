@@ -1,0 +1,6 @@
+mixin site-search()
+
+  .site-search&attributes(attributes)
+    +icon("icon-search", 24, 24).site-search__icon
+    label.visually-hidden Search
+    input.site-search__prompt(type="search", placeholder="search for a product, flower, etc")

@@ -1,0 +1,43 @@
+.site-search {
+  position: relative;
+
+  width: 100%;
+
+  color: $color-input;
+
+  transition: color $trans-default;
+
+  @include hover {
+    color: $color-input-action;
+  }
+
+  &:focus-within {
+    color: $color-input-action;
+  }
+}
+
+.site-search__icon {
+  position: absolute;
+  left: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.site-search__prompt {
+  width: 100%;
+  padding: 12px 16px;
+  padding-left: 48px;
+
+  font: inherit;
+  color: $color-input-action;
+
+  background-color: $color-site-bg;
+  border: 1px solid $color-input;
+  border-radius: 12px;
+
+  transition: border-color $trans-default;
+
+  @include hover-focus {
+    border-color: $color-input-action;
+  }
+}
