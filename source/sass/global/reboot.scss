@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
 }
 
 html {
@@ -29,6 +31,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   height: 100%;
 
   background-color: $color-default-white;
