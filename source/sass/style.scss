@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/nouislider.scss";
 
 // Global
 // ---------------------------------
@@ -21,6 +22,8 @@
 @import "blocks/site-search";
 @import "blocks/category-list";
 @import "blocks/category-checkbox";
+@import "blocks/search-results";
+@import "blocks/range-slider";
 @import "blocks/footer";
 
 // ---------------------------------

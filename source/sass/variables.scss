@@ -9,10 +9,15 @@ $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-black-russian:               #171722;
+$color-jaguar-2:                    #1e1d2e;
 $color-jaguar:                      #212129;
+$color-revolver-2:                  #30303d;
 $color-revolver:                    #353542;
+$color-zambezi:                     #606060;
 $color-nobel:                       #959595;
 
+$color-christi:                     #6bab2b;
+$color-lima:                        #7acb22;
 $color-yellow-green:                #84d52c;
 
 // Project colors
@@ -26,14 +31,37 @@ $color-input-action:                $color-default-white;
 $color-category-checkbox-bg:        $color-jaguar;
 $color-category-checkbox-checked-bg: $color-revolver;
 
+$color-range-slider:                $color-revolver-2;
+$color-range-slider-connect:        $color-lima;
+$color-range-slider-handle:         $color-lima;
+$color-range-slider-tooltip-txt:    $color-default-white;
+$color-range-slider-tooltip-bg:     $color-revolver-2;
+
+$color-range-slider-input:          $color-zambezi;
+$color-range-slider-input-action:   $color-default-white;
 
 // Gradient
 
-$gradient-category-checkbox:        linear-gradient(60deg, $color-transparent -120%, rgba($color: $color-yellow-green, $alpha: 36%) 100%);
+$gradient-category-checkbox:
+  linear-gradient(60deg, $color-transparent -120%, rgba($color: $color-yellow-green, $alpha: 36%) 100%);
+
+$gradient-range-slider-handle:
+  linear-gradient(150deg, $color-yellow-green 0%, $color-christi 100%);
+
+$gradient-range-slider-tooltip-corner-bg:
+    linear-gradient(45deg, $color-range-slider-tooltip-bg 50%, $color-transparent 50%);
 
 // Shadows
 
-$shadow-category-checkbox:          0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 20%);
+$shadow-category-checkbox:
+  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 20%);
+
+$shadow-range-slider-connect:
+  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.31);
+
+$shadow-range-slider-handle:
+  inset 3px 5px 12px 0 rgba($color: $color-default-white, $alpha: 0.2),
+  0 10px 27px 0 rgba($color: $color-jaguar-2, $alpha: 0.3);
 
 // Typography
 // ---------------------------------

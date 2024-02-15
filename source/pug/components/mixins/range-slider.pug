@@ -1,0 +1,8 @@
+mixin range-slider({ title, start, range})
+
+  .range-slider(data-title= title, data-start= JSON.stringify(start), data-range= JSON.stringify(range))
+    p.range-slider__title= title
+    .range-slider__slider
+    .range-slider__inputs
+      input.range-slider__input.range-slider__input--from
+      input.range-slider__input.range-slider__input--to

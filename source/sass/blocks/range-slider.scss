@@ -1,0 +1,104 @@
+.range-slider {
+  width: 230px;
+}
+
+.range-slider__title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-weight: 600;
+}
+
+.range-slider__slider {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 14px;
+  padding: 0 8px;
+
+  background: $color-range-slider;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+
+  .noUi-connect {
+    background-color: $color-range-slider-connect;
+    box-shadow: $shadow-range-slider-connect;
+
+    cursor: pointer;
+  }
+
+  .noUi-handle {
+    right: -8px;
+    top: -6px;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: $gradient-range-slider-handle;
+    background-color: $color-range-slider-handle;
+    border: none;
+    border-radius: 50%;
+    box-shadow: $shadow-range-slider-handle;
+
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &:before,
+    &:after {
+      content: unset;
+    }
+  }
+
+  .noUi-tooltip {
+    bottom: 27px;
+
+    padding: 3px 5px 2px;
+
+    color: $color-range-slider-tooltip-txt;
+
+    background-color: $color-range-slider-tooltip-bg;
+    border: none;
+    border-radius: 3px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%) rotate(-45deg);
+
+      width: 12px;
+      height: 12px;
+
+      background-image: $gradient-range-slider-tooltip-corner-bg;
+    }
+  }
+}
+
+.range-slider__inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.range-slider__input {
+  width: 62px;
+  padding: 1px 4px 0;
+
+  font: inherit;
+  font-size: 14px;
+  color: $color-range-slider-input-action;
+
+  background-color: $color-site-bg;
+  border: 1px solid $color-range-slider-input;
+  border-radius: 3px;
+
+  transition: border-color $trans-default;
+
+  @include hover-focus {
+    border-color: $color-range-slider-input-action;
+  }
+}

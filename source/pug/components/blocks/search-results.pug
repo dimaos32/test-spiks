@@ -1,0 +1,18 @@
+mixin search-results()
+
+  section.search-results
+    h1.visually-hidden Search results
+    .container
+      .search-results__filter
+        .search-results__filters
+          +range-slider({
+            title: "Price Range",
+            start: [0, 4000],
+            range: {
+              'min': [0, 10],
+              '10%': [100, 20],
+              '20%': [500, 50],
+              '40%': [1000, 100],
+              'max': [10000],
+            }
+          })
