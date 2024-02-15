@@ -1,17 +1,17 @@
 :root {
   --container-max-width: 1480px;
-  --container-padding-x: 30px;
+  --container-inline: 30px;
 
   @include vp-1023 {
-    --container-padding-x: 20px;
+    --container-inline: 20px;
   }
 
   @include vp-767 {
-    --container-padding-x: 15px;
+    --container-inline: 15px;
   }
 
   @include vp-413 {
-    --container-padding-x: 10px;
+    --container-inline: 10px;
   }
 }
 

@@ -3,8 +3,18 @@
   flex-wrap: wrap;
   gap: 10px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0 calc(-1 * var(--container-inline));
+  padding: 0 var(--container-inline);
 
   list-style-type: none;
+
+  @include vp-767 {
+    flex-wrap: nowrap;
+
+    overflow-y: auto;
+  }
+}
+
+.category-list__item {
+  flex-shrink: 0;
 }

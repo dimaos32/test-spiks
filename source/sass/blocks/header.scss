@@ -1,5 +1,9 @@
 .header {
-  margin: 22px 0;
+  margin: 22px 0 30px;
+
+  @include vp-767 {
+    margin: 20px 0;
+  }
 }
 
 .header__form {
