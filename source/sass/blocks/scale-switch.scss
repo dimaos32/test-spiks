@@ -1,0 +1,56 @@
+.scale-switch {
+  width: 114px;
+  margin: 0 -3px;
+}
+
+.scale-switch__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 3px;
+
+  font-weight: 600;
+}
+
+.scale-switch__switch {
+  width: 114px;
+  height: 27px;
+  margin-bottom: 2px;
+
+  background-image: $gradient-scale-switch;
+
+  mask-image: url("../img/content/scale.svg");
+  mask-repeat: no-repeat;
+  mask-size: 106px auto;
+  mask-position: center;
+}
+
+.scale-switch__list {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.scale-switch__radio {
+  appearance: none;
+
+  width: 10%;
+  height: 27px;
+
+  background-color: $color-transparent;
+
+  &:checked ~ & {
+    background-color: $scale-switch-radio-checked;
+  }
+}
+
+.scale-switch__legend {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+
+  font-size: 12px;
+  color: $scale-switch-legend-txt;
+}

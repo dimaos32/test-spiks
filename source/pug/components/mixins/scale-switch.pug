@@ -1,0 +1,13 @@
+mixin scale-switch({ title, name } = { title: "No title", name: "scale-switch" })
+
+  .scale-switch
+    p.scale-switch__title= title
+    - let n = 0;
+    .scale-switch__switch
+      .scale-switch__list
+        while n < 10
+          input.scale-switch__radio(type="radio", name= name, value=`${10 * (n++)}%`, checked= n === 5)
+    .scale-switch__legend
+      spam min
+      spam max
+

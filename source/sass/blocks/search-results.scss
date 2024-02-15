@@ -1,3 +1,10 @@
 .search-results {
   margin: 30px 0;
 }
+
+.search-results__filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+}
