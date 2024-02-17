@@ -8,6 +8,7 @@ $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
 
+$color-black-russian-2:             #0f0f17;
 $color-black-russian:               #171722;
 $color-jaguar-2:                    #1e1d2e;
 $color-jaguar:                      #212129;
@@ -47,6 +48,12 @@ $color-range-slider-input-action:   $color-default-white;
 $scale-switch-legend-txt:           $color-nobel;
 $scale-switch-radio-checked:        $color-bilbao;
 
+$color-select-main-txt:             $color-default-white;
+$color-select-main-bg:              $color-revolver;
+$color-select-content-txt:          $color-default-white;
+$color-select-content-bg:           $color-jaguar;
+$color-select-content-bg-action:    $color-revolver;
+
 // Gradient
 
 $gradient-category-checkbox:
@@ -56,15 +63,18 @@ $gradient-range-slider-handle:
   linear-gradient(150deg, $color-yellow-green 0%, $color-christi 100%);
 
 $gradient-range-slider-tooltip-corner:
-    linear-gradient(45deg, $color-range-slider-tooltip-bg 50%, $color-transparent 50%);
+  linear-gradient(45deg, $color-range-slider-tooltip-bg 50%, $color-transparent 50%);
 
 $gradient-scale-switch:
-    linear-gradient(75deg, $color-dandelion 0%, $color-apple 100%);
+  linear-gradient(75deg, $color-dandelion 0%, $color-apple 100%);
+
+$gradient-category-select:
+  linear-gradient(60deg, $color-transparent -120%, rgba($color: $color-yellow-green, $alpha: 36%) 100%);
 
 // Shadows
 
 $shadow-category-checkbox:
-  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 20%);
+  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.2);
 
 $shadow-range-slider-connect:
   0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.31);
@@ -72,6 +82,12 @@ $shadow-range-slider-connect:
 $shadow-range-slider-handle:
   inset 3px 5px 12px 0 rgba($color: $color-default-white, $alpha: 0.2),
   0 10px 27px 0 rgba($color: $color-jaguar-2, $alpha: 0.3);
+
+$shadow-select-main:
+  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.2);
+
+$shadow-select-content:
+  0 10px 25px 0 rgba($color: $color-black-russian-2, $alpha: 0.63);
 
 // Typography
 // ---------------------------------

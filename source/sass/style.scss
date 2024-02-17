@@ -2,7 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "vendor/nouislider.scss";
+@import "vendor/nouislider";
+@import "vendor/slimselect";
 
 // Global
 // ---------------------------------
@@ -25,6 +26,7 @@
 @import "blocks/search-results";
 @import "blocks/range-slider";
 @import "blocks/scale-switch";
+@import "blocks/select";
 @import "blocks/footer";
 
 // ---------------------------------

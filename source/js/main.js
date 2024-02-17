@@ -1,6 +1,7 @@
 import { mobileVhFix } from './utils/mobile-vh-fix';
 
-import { initRangeSliders } from './modules/init-range-sliders'
+import { initRangeSliders } from './modules/init-range-sliders';
+import { initSelects } from './modules/init-selects';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initRangeSliders();
+    initSelects();
   });
 });
 

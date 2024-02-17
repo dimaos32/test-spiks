@@ -1,0 +1,116 @@
+.select {
+  position: relative;
+  padding: 1px;
+
+  background-image: $gradient-category-select;
+  border-radius: 10px;
+
+  .ss-main {
+    min-width: 48px;
+    padding: 12px 6px;
+
+    color: $color-select-main-txt;
+    background-color: $color-select-main-bg;
+    border: none;
+    border-radius: 9px;
+
+    @include hover-focus {
+      box-shadow: $shadow-select-main;
+    }
+
+    .ss-values {
+      .ss-single {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .ss-arrow {
+      display: none;
+    }
+  }
+
+  .ss-content {
+    top: calc(100% + 16px) !important;
+    left: unset !important;
+    right: 0  !important;
+    width: max-content !important;
+    max-height: 400px;
+    padding: 20px 0;
+
+    background-color: $color-select-content-bg;
+    border: none;
+    border-radius: 10px;
+    box-shadow: $shadow-select-content;
+
+    .ss-list {
+      .ss-optgroup {
+        .ss-optgroup-label {
+          padding: 0 20px;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
+          .ss-optgroup-label-text {
+            font-weight: 400;
+            color: $color-select-content-txt;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+
+      .ss-option {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+
+        font-weight: 400;
+        color: $color-select-content-txt;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        &.ss-highlighted {
+          background-color: $color-select-content-bg-action;
+        }
+
+        @include hover-focus {
+          background-color: $color-select-content-bg-action;
+        }
+      }
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+
+    &.rotate-180deg {
+      transform: rotate(180deg);
+    }
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.select__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
