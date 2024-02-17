@@ -1,0 +1,41 @@
+.selected-properties {
+  display: flex;flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.selected-properties__item {
+  display: none;
+  align-items: center;
+  padding: 6px 8px 4px;
+
+  background: $color-selected-property-bg;
+  border-radius: 15px;
+  box-shadow: $shadow-selected-property;
+
+  &.is-selected {
+    display: flex;
+  }
+}
+
+.selected-properties__remove-btn {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+
+  color: $color-selected-property-remove-btn;
+
+  background-color: $color-transparent;
+  border: none;
+
+  transition: color $trans-default;
+
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-selected-property-remove-btn-action;
+  }
+}

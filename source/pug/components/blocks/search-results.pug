@@ -1,76 +1,5 @@
 mixin search-results()
 
-  -
-    const priceSlider = {
-            title: "Price Range",
-            start: [0, 4000],
-            range: {
-              'min': [0, 10],
-              '10%': [100, 20],
-              '20%': [500, 50],
-              '40%': [1000, 100],
-              'max': [10000],
-            }
-          }
-
-    const selectSort = {
-      name: 'sort',
-      markup: [
-        {
-          label: 'Sort by :',
-          options: [
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-settings"></use></svg><span>Default</span>',
-              text: 'Default',
-              value: 'default',
-              selected: true,
-              display: false,
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-calendar"></use></svg><span>Date (New first)</span>',
-              text: 'Date (New first)',
-              value: 'date-new',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-calendar"></use></svg><span>Date (Old first)</span>',
-              text: 'Date (Old first)',
-              value: 'date-old',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg><span>Price (High first)</span>',
-              text: 'Price (High first)',
-              value: 'price-high',
-            },
-            {
-              html: '<svg class="rotate-180deg" width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg><span>Price (Low first)</span>',
-              text: 'Price (Low first)',
-              value: 'price-low',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-thc-high"></use></svg><span>Total THC (High first)</span>',
-              text: 'Total THC (High first)',
-              value: 'thc-high',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-thc-low"></use></svg><span>Total THC (Low first)</span>',
-              text: 'Total THC (Low first)',
-              value: 'thc-low',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-cbd-high"></use></svg><span>Total CBD (High first)</span>',
-              text: 'Total CBD (High first)',
-              value: 'cbd-high',
-            },
-            {
-              html: '<svg width="24" height="24" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-cbd-low"></use></svg><span>Total CBD (Low first)</span>',
-              text: 'Total CBD (Low first)',
-              value: 'cbd-low',
-            },
-          ],
-        },
-      ],
-    }
-
   section.search-results
     h1.visually-hidden Search results
     .container
@@ -79,3 +8,9 @@ mixin search-results()
           +range-slider(priceSlider)
           +scale-switch({ title: "Nose", name: "nose" })
           +select(selectSort).search-results__sort
+      .search-results__results
+        .search-results__summary
+          .search-results__total-results #[output 1034,5] Results
+          +selected-properties()
+        +search-properties()
+        .search-results__products

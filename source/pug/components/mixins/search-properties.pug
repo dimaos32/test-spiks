@@ -1,0 +1,20 @@
+mixin search-properties()
+
+  .search-properties
+    ul.search-properties__groups(data-accordion="parent")
+      each group in propertiyGroups
+        - const { groupTitle, properties } = group
+        li.search-properties__group.is-active(data-accordion="element")
+          button.search-properties__button(type="button", data-accordion="button")
+            span= groupTitle
+            +icon("icon-chevron", 13, 8)
+          .search-properties__content(data-accordion="content")
+            ul.search-properties__properties
+              each property in properties
+                - const { title, value, checked } = property
+                li.search-properties__property
+                  label.search-properties__label
+                    input.visually-hidden(type="checkbox", name="properties", value= value, checked= checked)
+                    span.search-properties__checkbox
+                      +icon("icon-check", 10, 8)
+                    span.search-properties__label-text= title

@@ -1,33 +1,5 @@
 mixin category-list()
 
-  -
-    const categories = [
-      {
-        icon: ["icon-leaf", 24, 24],
-        text: "Buds",
-        value: "buds",
-        checked: false,
-      },
-      {
-        icon: ["icon-leaf", 24, 24],
-        text: "Edible",
-        value: "edible",
-        checked: true,
-      },
-      {
-        icon: ["icon-leaf", 24, 24],
-        text: "Non Edible",
-        value: "non-edible",
-        checked: true,
-      },
-      {
-        icon: ["icon-leaf", 24, 24],
-        text: "Concentrate",
-        value: "concentrate",
-        checked: true,
-      },
-    ]
-
   ul.category-list
     each category in categories
       li.category-list__item

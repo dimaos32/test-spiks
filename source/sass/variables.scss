@@ -15,6 +15,7 @@ $color-jaguar:                      #212129;
 $color-revolver-2:                  #30303d;
 $color-revolver:                    #353542;
 $color-zambezi:                     #606060;
+$color-suva-grey:                   #8a8a8a;
 $color-nobel:                       #959595;
 
 $color-bilbao:                      #297019;
@@ -54,6 +55,23 @@ $color-select-content-txt:          $color-default-white;
 $color-select-content-bg:           $color-jaguar;
 $color-select-content-bg-action:    $color-revolver;
 
+$color-selected-property-bg:        $color-bilbao;
+$color-selected-property-remove-btn: $color-apple;
+$color-selected-property-remove-btn-action: $color-dandelion;
+
+$color-search-properties-bg:        $color-revolver;
+$color-search-properties-btn-txt:   $color-default-white;
+$color-search-properties-btn-txt-action: $color-yellow-green;
+$color-search-properties-btn-icon:  $color-nobel;
+$color-search-properties-btn-icon-action: $color-yellow-green;
+$search-properties-checkbox:        $color-transparent;
+$search-properties-checkbox-checked: $color-default-white;
+$search-properties-checkbox-bg:     $color-transparent;
+$search-properties-checkbox-checked-bg: $color-yellow-green;
+$search-properties-checkbox-border: $color-nobel;
+$search-properties-checkbox-label:  $color-nobel;
+$search-properties-checkbox-checked-label: $color-default-white;
+
 // Gradient
 
 $gradient-category-checkbox:
@@ -71,6 +89,12 @@ $gradient-scale-switch:
 $gradient-category-select:
   linear-gradient(60deg, $color-transparent -120%, rgba($color: $color-yellow-green, $alpha: 36%) 100%);
 
+$gradient-search-properties:
+  linear-gradient(60deg, $color-transparent -120%, rgba($color: $color-yellow-green, $alpha: 36%) 100%);
+
+$gradient-search-properties-checkbox:
+linear-gradient(223deg, $color-christi 0%, $color-yellow-green 100%);
+
 // Shadows
 
 $shadow-category-checkbox:
@@ -87,7 +111,15 @@ $shadow-select-main:
   0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.2);
 
 $shadow-select-content:
-  0 10px 25px 0 rgba($color: $color-black-russian-2, $alpha: 0.63);
+  0 10px 25px 0 rgba($color: $color-black-russian-2, $alpha: 0.63),
+  0 3px 15px 0 rgba($color: $color-yellow-green, $alpha: 0.2);
+
+$shadow-selected-property:
+  inset -5px -5px 16px 0 rgba($color: $color-suva-grey, $alpha: 0.09);
+
+$shadow-search-properties-checkbox:
+  inset 3px 5px 12px 0 rgba($color: $color-default-white, $alpha: 0.36),
+  0 10px 27px 0 rgba($color: $color-jaguar-2, $alpha: 0.3);
 
 // Typography
 // ---------------------------------

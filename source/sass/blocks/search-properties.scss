@@ -1,0 +1,134 @@
+.search-properties {
+  width: 245px;
+  padding: 1px;
+
+  background-image: $gradient-search-properties;
+  border-radius: 10px;
+}
+
+.search-properties__groups {
+  margin: 0;
+  padding: 15px 22px 30px 17px;
+
+  list-style-type: none;
+
+  background-color: $color-search-properties-bg;
+  background-image: url("../img/content/half-leaf.svg");
+  background-repeat: no-repeat;
+  background-size: 102px 209px;
+  background-position: left center;
+  border-radius: 9px;
+}
+
+.search-properties__group {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.search-properties__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: $color-search-properties-btn-txt;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: color $trans-default;
+
+  svg {
+    flex-shrink: 0;
+    width: 13px;
+    height: 8px;
+    margin-left: 15px;
+
+    color: $color-search-properties-btn-icon;
+
+    transition: color $trans-default;
+  }
+
+  @include hover-focus {
+    color: $color-search-properties-btn-txt-action;
+
+    svg {
+      color: $color-search-properties-btn-icon-action;
+    }
+  }
+}
+
+.search-properties__properties {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+
+  list-style-type: none;
+}
+
+.search-properties__property {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.search-properties__label {
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-properties__checkbox {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+
+  line-height: 1.47;
+
+  color: $search-properties-checkbox;
+
+  background-color: $search-properties-checkbox-bg;
+  border: 1px solid $search-properties-checkbox-border;
+  border-radius: 2px;
+
+  transition:
+    color $trans-default,
+    background-color $trans-default,
+    background-image $trans-default,
+    border $trans-default,
+    box-shadow $trans-default;
+
+  input:checked + & {
+    color: $search-properties-checkbox-checked;
+
+    background-color: $search-properties-checkbox-checked-bg;
+    background-image: $gradient-search-properties-checkbox;
+    border: none;
+    box-shadow: $shadow-search-properties-checkbox;
+  }
+}
+
+.search-properties__label-text {
+  line-height: 1.47;
+  color: $search-properties-checkbox-label;
+
+  transition: color $trans-default;
+
+  input:checked ~ & {
+    font-weight: 600;
+    color: $search-properties-checkbox-checked-label
+  }
+}
+
+

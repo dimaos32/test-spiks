@@ -1,0 +1,10 @@
+mixin selected-properties()
+
+  ul.selected-properties
+    each group in propertiyGroups
+      each property in group.properties
+        - const { title, value, checked } = property
+        li.selected-properties__item(class={"is-selected": checked})
+          span= title
+          button.selected-properties__remove-btn(type="button", aria-label=`Remove ${title} filter`)
+            +icon("icon-cancel", 18, 18)
