@@ -18,6 +18,10 @@
       box-shadow: $shadow-select-main;
     }
 
+    &:focus {
+      box-shadow: $shadow-select-main;
+    }
+
     .ss-values {
       .ss-single {
         display: flex;
