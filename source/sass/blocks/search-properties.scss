@@ -46,6 +46,7 @@
   transition: color $trans-default;
 
   svg {
+    transform: rotate(180deg);
     flex-shrink: 0;
     width: 13px;
     height: 8px;
@@ -53,7 +54,13 @@
 
     color: $color-search-properties-btn-icon;
 
-    transition: color $trans-default;
+    transition:
+      transform $trans-default,
+      color $trans-default;
+
+    .is-active & {
+      transform: rotate(0);
+    }
   }
 
   @include hover-focus {
@@ -130,5 +137,3 @@
     color: $search-properties-checkbox-checked-label
   }
 }
-
-

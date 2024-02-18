@@ -45,6 +45,7 @@
     left: unset !important;
     right: 0  !important;
     width: max-content !important;
+    max-width: 245px;
     max-height: 400px;
     padding: 20px 0;
 
@@ -98,6 +99,8 @@
   }
 
   svg {
+    flex-shrink: 0;
+    align-self: flex-start;
     width: 24px;
     height: 24px;
 
