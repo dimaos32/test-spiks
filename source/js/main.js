@@ -4,6 +4,7 @@ import { initRangeSliders } from './modules/init-range-sliders';
 import { initSelects } from './modules/init-selects';
 
 import { initAccordions } from './modules/init-accordion';
+import { initProtertiesSync } from './modules/init-properties-sync';
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initAccordions();
+    initProtertiesSync();
   });
 });
 

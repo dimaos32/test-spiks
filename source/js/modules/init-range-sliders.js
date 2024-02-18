@@ -15,7 +15,7 @@ const initRangeSliders = () => {
 
     const onInputChange = (input, handle) => {
       slider.noUiSlider.setHandle(handle, input.value);
-    }
+    };
 
     const onKeydown = (evt, input, handle) => {
       const values = slider.noUiSlider.get();
@@ -56,11 +56,12 @@ const initRangeSliders = () => {
 
           break;
       }
-    }
+    };
 
     noUiSlider.create(slider, {
       start: JSON.parse(rangeSlider.dataset.start),
       connect: true,
+      // eslint-disable-next-line no-undef
       tooltips: [false, wNumb({ decimals: 0, suffix: ' $' })],
       range: JSON.parse(rangeSlider.dataset.range),
     });
@@ -73,7 +74,7 @@ const initRangeSliders = () => {
       input.addEventListener('change', () => onInputChange(input, handle));
       input.addEventListener('keydown', (evt) => onKeydown(evt, input, handle));
     });
-  })
-}
+  });
+};
 
 export { initRangeSliders };

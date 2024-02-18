@@ -46,8 +46,8 @@
       cursor: grabbing;
     }
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: unset;
     }
   }
@@ -63,7 +63,7 @@
     border: none;
     border-radius: 3px;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       left: 50%;

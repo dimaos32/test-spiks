@@ -1,4 +1,4 @@
-import {iosChecker} from './ios-checker';
+import { iosChecker } from './ios-checker';
 
 const mobileVhFix = () => {
   const isMobile = /Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -15,4 +15,4 @@ const mobileVhFix = () => {
   }
 };
 
-export {mobileVhFix};
+export { mobileVhFix };

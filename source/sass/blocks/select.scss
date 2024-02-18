@@ -40,10 +40,11 @@
     }
   }
 
+  /* stylelint-disable */
   .ss-content {
     top: calc(100% + 16px) !important;
     left: unset !important;
-    right: 0  !important;
+    right: 0 !important;
     width: max-content !important;
     max-width: 245px;
     max-height: 400px;
@@ -97,6 +98,7 @@
       }
     }
   }
+  /* stylelint-enable */
 
   svg {
     flex-shrink: 0;

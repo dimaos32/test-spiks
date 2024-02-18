@@ -1,11 +1,13 @@
 .selected-properties {
-  display: flex;flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 0;
   padding: 0;
 
   list-style-type: none;
 }
+
 .selected-properties__item {
   display: none;
   align-items: center;
